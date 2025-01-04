@@ -23,6 +23,7 @@ const Booking = () => {
     useEffect(() => {
         const fetchBookings = async () => {
             try {
+                console.log({ baseUrl });
                 const response = await axios.get(`${baseUrl}api/booking/get`);
                 setBookedDates(response.data.data);
             } catch (err) {
