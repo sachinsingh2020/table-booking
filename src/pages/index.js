@@ -40,7 +40,11 @@ const Home = () => {
           </div>
         </div>
       </section>
-
+      <div
+        className='text-center text-white text-2xl py-4'
+      >
+        Made By Sachin Singh
+      </div>
     </div>
   );
 };
