@@ -1,5 +1,13 @@
-import "@/styles/globals.css";
+import { Toaster } from 'react-hot-toast'; // Import Toaster
+import '../styles/globals.css';
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+function MyApp({ Component, pageProps }) {
+  return (
+    <>
+      <Toaster position="top-center" /> {/* Position the toasts */}
+      <Component {...pageProps} />
+    </>
+  );
 }
+
+export default MyApp;
